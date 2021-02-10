@@ -1,11 +1,35 @@
-import Header from "./components/Header";
+import { useState } from "react"
+import Header from "./components/Header"
+import Tasks from "./components/Tasks"
 
 function App() {
+  const [burrito, setBurrito] = useState([
+    {
+      id: 1,
+      text: "Early meeting",
+      day: "March 5 at 8am",
+      reminder: true,
+    },
+    {
+      id: 2,
+      text: "Weekly grocery shopping",
+      day: "March 8 at 6pm",
+      reminder: true,
+    },
+    {
+      id: 3,
+      text: "Take dog to park",
+      day: "March 9 at 7pm",
+      reminder: false,
+    },
+  ])
+
   return (
-    <div className='container'>
+    <div className="container">
       <Header />
+      <Tasks spoons={burrito} />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
