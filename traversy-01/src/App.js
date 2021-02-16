@@ -29,10 +29,25 @@ function App() {
     setBurrito(burrito.filter((task) => task.id !==id))
   }
 
+  //toggle reminder
+  const toggleReminder = (id) => {
+    setBurrito(
+      burrito.map((task) => 
+      task.id === id ? { ...task, reminder:
+      !task.reminder } : task
+      )
+    )
+  }
+
   return (
     <div className="container">
       <Header />
-      {burrito.length > 0 ? <Tasks spoons={burrito} onDelete={deleteTask} /> : 'No Tasks - Relax!'}
+      {burrito.length > 0 ? (
+        <Tasks spoons={burrito} onDelete=
+        {deleteTask} onToggle={toggleReminder} />
+      ) : (
+        'No Tasks - Relax!'
+      )}
     </div>
   )
 }
