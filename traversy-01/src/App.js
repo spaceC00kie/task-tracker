@@ -24,10 +24,15 @@ function App() {
     },
   ])
 
+  //delete task
+  const deleteTask = (id) => {
+    setBurrito(burrito.filter((task) => task.id !==id))
+  }
+
   return (
     <div className="container">
       <Header />
-      <Tasks spoons={burrito} />
+      {burrito.length > 0 ? <Tasks spoons={burrito} onDelete={deleteTask} /> : 'No Tasks - Relax!'}
     </div>
   )
 }
