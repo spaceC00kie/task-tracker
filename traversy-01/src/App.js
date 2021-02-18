@@ -4,6 +4,7 @@ import Header from "./components/Header"
 import Tasks from "./components/Tasks"
 
 function App() {
+  const [showAddTask, setShowAddTask] = useState(false)
   const [burrito, setBurrito] = useState([
     {
       id: 1,
@@ -25,6 +26,13 @@ function App() {
     },
   ])
 
+  //add task
+  const addTask = (task) => {
+    const id = Math.floor(Math.random() * 10000) + 1
+    const newTask = { id, ...task }
+    setBurrito([...burrito, newTask])
+  }
+
   //delete task
   const deleteTask = (id) => {
     setBurrito(burrito.filter((task) => task.id !==id))
@@ -42,8 +50,8 @@ function App() {
 
   return (
     <div className="container">
-      <Header />
-      <AddTask />
+      <Header onAdd={() => setShowAddTask(!showAddTask)} />
+      {showAddTask && <AddTask onAdd={addTask} />}
       {burrito.length > 0 ? (
         <Tasks spoons={burrito} onDelete=
         {deleteTask} onToggle={toggleReminder} />
