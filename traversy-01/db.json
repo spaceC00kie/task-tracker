@@ -7,16 +7,22 @@
       "reminder": true
     },
     {
-      "id": 2,
-      "text": "Weekly grocery shopping",
-      "day": "March 8 at 6pm",
-      "reminder": true
-    },
-    {
       "id": 3,
       "text": "Take dog to park",
       "day": "March 9 at 7pm",
       "reminder": false
+    },
+    {
+      "text": "Program",
+      "day": "Today",
+      "reminder": true,
+      "id": 4
+    },
+    {
+      "text": "Shower",
+      "day": "Every day",
+      "reminder": false,
+      "id": 5
     }
   ]
 }

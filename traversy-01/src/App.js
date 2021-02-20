@@ -18,43 +18,62 @@ function App() {
 
   //fetch tasks
   const fetchTasks = async () => {
-    const res = await fetch('http://localhost:5000/tasks')
+    const res = await fetch("http://localhost:5000/tasks")
     const data = await res.json()
 
     return data
   }
 
   //add task
-  const addTask = (task) => {
-    const id = Math.floor(Math.random() * 10000) + 1
-    const newTask = { id, ...task }
-    setBurrito([...burrito, newTask])
+  const addTask = async task => {
+    const res = await fetch("http://localhost:5000/tasks", {
+      method: "POST",
+      headers: { "Content-type": "application/json" },
+      body: JSON.stringify(task),
+    })
+
+    const data = await res.json()
+
+    setBurrito([...burrito, data])
+
+    //const id = Math.floor(Math.random() * 10000) + 1
+    //const newTask = { id, ...task }
+    //setBurrito([...burrito, newTask])
   }
 
   //delete task
-  const deleteTask = (id) => {
-    setBurrito(burrito.filter((task) => task.id !==id))
+  const deleteTask = async id => {
+    await fetch(`http://localhost:5000/tasks/${id}`, {
+      method: "DELETE",
+    })
+
+    setBurrito(burrito.filter(task => task.id !== id))
   }
 
   //toggle reminder
-  const toggleReminder = (id) => {
+  const toggleReminder = id => {
     setBurrito(
-      burrito.map((task) => 
-      task.id === id ? { ...task, reminder:
-      !task.reminder } : task
+      burrito.map(task =>
+        task.id === id ? { ...task, reminder: !task.reminder } : task
       )
     )
   }
 
   return (
     <div className="container">
-      <Header onAdd={() => setShowAddTask(!showAddTask)} showAdd={showAddTask} />
+      <Header
+        onAdd={() => setShowAddTask(!showAddTask)}
+        showAdd={showAddTask}
+      />
       {showAddTask && <AddTask onAdd={addTask} />}
       {burrito.length > 0 ? (
-        <Tasks spoons={burrito} onDelete=
-        {deleteTask} onToggle={toggleReminder} />
+        <Tasks
+          spoons={burrito}
+          onDelete={deleteTask}
+          onToggle={toggleReminder}
+        />
       ) : (
-        'No Tasks - Relax!'
+        "No Tasks - Relax!"
       )}
     </div>
   )
