@@ -90,16 +90,24 @@ function App() {
           onAdd={() => setShowAddTask(!showAddTask)}
           showAdd={showAddTask}
         />
-        {showAddTask && <AddTask onAdd={addTask} />}
-        {burrito.length > 0 ? (
-          <Tasks
-            spoons={burrito}
-            onDelete={deleteTask}
-            onToggle={toggleReminder}
-          />
-        ) : (
-          "No Tasks - Relax!"
-        )}
+        <Route
+          path="/"
+          exact
+          render={props => (
+            <>
+              {showAddTask && <AddTask onAdd={addTask} />}
+              {burrito.length > 0 ? (
+                <Tasks
+                  spoons={burrito}
+                  onDelete={deleteTask}
+                  onToggle={toggleReminder}
+                />
+              ) : (
+                "No Tasks - Relax!"
+              )}
+            </>
+          )}
+        />
         <Route path="/about" component={About} />
         <Footer />
       </div>
