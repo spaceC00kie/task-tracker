@@ -13,12 +13,6 @@
       "reminder": false
     },
     {
-      "text": "Program",
-      "day": "Today",
-      "reminder": true,
-      "id": 4
-    },
-    {
       "text": "Shower",
       "day": "Every day",
       "reminder": false,
