@@ -1,4 +1,6 @@
 import { useEffect, useState } from "react"
+import { BrowserRouter as Router, Route } from "react-router-dom"
+import About from "./components/About"
 import AddTask from "./components/AddTask"
 import Footer from "./components/Footer"
 import Header from "./components/Header"
@@ -82,23 +84,26 @@ function App() {
   }
 
   return (
-    <div className="container">
-      <Header
-        onAdd={() => setShowAddTask(!showAddTask)}
-        showAdd={showAddTask}
-      />
-      {showAddTask && <AddTask onAdd={addTask} />}
-      {burrito.length > 0 ? (
-        <Tasks
-          spoons={burrito}
-          onDelete={deleteTask}
-          onToggle={toggleReminder}
+    <Router>
+      <div className="container">
+        <Header
+          onAdd={() => setShowAddTask(!showAddTask)}
+          showAdd={showAddTask}
         />
-      ) : (
-        "No Tasks - Relax!"
-      )}
-      <Footer />
-    </div>
+        {showAddTask && <AddTask onAdd={addTask} />}
+        {burrito.length > 0 ? (
+          <Tasks
+            spoons={burrito}
+            onDelete={deleteTask}
+            onToggle={toggleReminder}
+          />
+        ) : (
+          "No Tasks - Relax!"
+        )}
+        <Route path="/about" component={About} />
+        <Footer />
+      </div>
+    </Router>
   )
 }
 
