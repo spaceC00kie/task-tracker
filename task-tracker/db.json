@@ -1,0 +1,22 @@
+{
+  "tasks": [
+    {
+      "text": "Shower",
+      "day": "Every day",
+      "reminder": false,
+      "id": 5
+    },
+    {
+      "text": "Feed and Walk Franklin",
+      "day": "Every morning",
+      "reminder": false,
+      "id": 6
+    },
+    {
+      "text": "Clean coffee utensils",
+      "day": "Every morning",
+      "reminder": false,
+      "id": 7
+    }
+  ]
+}
