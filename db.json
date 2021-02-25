@@ -1,15 +1,9 @@
 {
   "tasks": [
     {
-      "text": "Shower",
-      "day": "Every day",
-      "reminder": false,
-      "id": 5
-    },
-    {
       "text": "Feed and Walk Franklin",
       "day": "Every morning",
-      "reminder": false,
+      "reminder": true,
       "id": 6
     },
     {
@@ -17,6 +11,12 @@
       "day": "Every morning",
       "reminder": false,
       "id": 7
+    },
+    {
+      "text": "test",
+      "day": "test",
+      "reminder": false,
+      "id": 8
     }
   ]
 }

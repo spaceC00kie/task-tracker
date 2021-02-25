@@ -8,6 +8,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
+  background-color: black;
 }
 
 .container {
@@ -15,9 +16,10 @@ body {
   margin: 30px auto;
   overflow: auto;
   min-height: 300px;
-  border: 1px solid steelblue;
+  border: 2px solid #287d4b;
   padding: 30px;
-  border-radius: 5px;
+  border-radius: 10px;
+  background-color: #f7f7f0;
 }
 
 .header {
@@ -54,15 +56,23 @@ body {
   width: 100%;
 }
 
+.tasks {
+  border: 1px solid #287d4b;
+  border-radius: 10px;
+  background-color: black;
+}
+
 .task {
   background: #f4f4f4;
   margin: 5px;
   padding: 10px 20px;
   cursor: pointer;
+  border-radius: 1em;
+  border: 1px solid #287d4b;
 }
 
 .task.reminder {
-  border-left: 5px solid green;
+  border-left: 10px solid #287d4b;
 }
 
 .task h3 {

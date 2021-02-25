@@ -1,17 +1,17 @@
 import Task from "./Task"
 
-const Tasks = ({spoons, onDelete, onToggle}) => {
+const Tasks = ({ spoons, onDelete, onToggle }) => {
   return (
-    <>
-      {spoons.map((spoon) => (
-        <Task 
-          key={spoon.id} 
-          treat={spoon} 
-          onDelete={onDelete} 
+    <div className="tasks">
+      {spoons.map(spoon => (
+        <Task
+          key={spoon.id}
+          treat={spoon}
+          onDelete={onDelete}
           onToggle={onToggle}
         />
       ))}
-    </>
+    </div>
   )
 }
 
