@@ -4,9 +4,7 @@ My task tracker is a list of tasks that you can add to, set reminders for, and r
 
 <video of main page tasks being double-clicked>
 
-Git clone, CD into directory, "npm i", "npm start", "npm run server" 
-
-To use this code you'll want to install JSON server by typing "npm I json-server"
+To use this code you'll need to Git clone, CD into directory, "npm i", "npm start", "npm run server" 
 
 Once you have a server running, you can add your own tasks.
 
