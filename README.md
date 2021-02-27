@@ -1,11 +1,13 @@
 # Task Tracker
 
-My task tracker is basically an editable to-do list with the option to set reminders and dates for the tasks. It has a black background to be easier on the eyes with a light center window for visual clarity.
+My task tracker is a list of tasks that you can add to, set reminders for, and remove. If you double-click on a task on the home page it sets the reminder to true.
+Below you can see the main page and the reminder functionality.
 
-You can see all your tasks on the main page, a button to add a task, and a link to an About page. If you double-click on a task on the home page it automatically sets a reminder.
-
-The Add button opens fields to set a title for a task, a day and time, a checkbox to set a reminder, and a button to save the task. At the same time the green Add button turns into a red Close button in case you decide not to set a task.
-
-Following the About link shows the version number and a Go Back link.
+<video of main page tasks being double-clicked>
 
 You'll want to run a JSON server by typing "json-server --watch db.json --port 5000"
+Once you have a server running, you can add your own tasks.
+
+<video of task being created>
+
+Following the About link shows the version number, a Go Back link, and the footer.
