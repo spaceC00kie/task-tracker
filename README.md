@@ -12,15 +12,15 @@ Before using this code you'll need to have node installed and if you use linux y
 
 To use this code just type a few commands into your command line:
 
-  1 - "git clone https://github.com/spaceC00kie/reactToDoList"
+  1 - `git clone https://github.com/spaceC00kie/reactToDoList`
 
-  2 - "cd reactToDoList"
+  2 - `cd reactToDoList`
 
-  3 - "npm i"
+  3 - `npm i`
 
-  4 - "npm run server"
+  4 - `npm run server`
 
-  5 - "npm start" 
+  5 - `npm start`
 
 
 
