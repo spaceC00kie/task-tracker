@@ -22,6 +22,11 @@ To use this code just type a few commands into your command line:
 
   5 - "npm start" 
 
-Thank you for checking out my app.
+
+
+
+#### Thank you for checking out my app.
+
+
 
 Credits - thanks to Traversy Media for the tutorial that helped me create this.
