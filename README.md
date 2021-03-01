@@ -27,7 +27,7 @@ To use this code copy and paste the commands below:
 
 
 
-#### Thank you for checking out my app.
+###### Thank you for checking out my app.
 
 
 
