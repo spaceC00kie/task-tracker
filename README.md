@@ -1,8 +1,8 @@
 # Task Tracker
 
-## What is this?
+## About
 
-This task tracker software was built in an effort to better my React skills. This program lets you create a list of tasks and reminders; it uses json-server on the backend to persist those tasks. 
+This task tracker software was built in an effort to better my React skills. The service lets you create a list of tasks and reminders; it uses json-server on the backend to persist those tasks. 
 
 <img src="readme-assets/EarlyMeetingsForever.gif" width="40%">
 
