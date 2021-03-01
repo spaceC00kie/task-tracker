@@ -2,7 +2,7 @@
 
 ## What is this?
 
-My task tracker was made with the intent to sharpen my react skills. This program lets you create a list of tasks that you can add to, set reminders for, and remove. If you double-click on a task on the home page it sets the reminder to true and adds a thick border to the left side of the task.
+This task tracker software was built in an effort to better my React skills. This program lets you create a list of tasks and reminders; it uses json-server to persist those tasks. 
 
 <gif of app in use>
 
@@ -10,7 +10,7 @@ My task tracker was made with the intent to sharpen my react skills. This progra
 
 Before using this code you'll need to have node installed and if you use linux you should sudo apt install nodejs.
 
-To use this code just type a few commands into your command line:
+To use this code copy and paste the commands below:
 
   `git clone https://github.com/spaceC00kie/reactToDoList`
 
@@ -19,6 +19,8 @@ To use this code just type a few commands into your command line:
   `npm i`
 
   `npm run server`
+  
+  Open another window in the same directory and run:
 
   `npm start`
 
@@ -29,4 +31,12 @@ To use this code just type a few commands into your command line:
 
 
 
-Credits - thanks to Traversy Media for the tutorial that helped me create this.
+<details>
+   <summary>
+     Credits
+  </summary>
+  
+###### Thanks to Traversy Media for the [tutorial](https://youtu.be/w7ejDZ8SWv8) that helped me create this app.
+
+###### Thank you to [Geek Technique](https://github.com/geektechniquestudios) for guidance as well!
+</details>
