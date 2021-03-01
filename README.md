@@ -4,7 +4,7 @@
 
 This task tracker software was built in an effort to better my React skills. This program lets you create a list of tasks and reminders; it uses json-server to persist those tasks. 
 
-![](readme-assets/EarlyMeetingsForever.gif)
+<img src="readme-assets/EarlyMeetingsForever.gif" size="10">
 
 ## How To Install
 
