@@ -2,13 +2,11 @@
 
 ## What is this?
 
-This task tracker software was built in an effort to better my React skills. This program lets you create a list of tasks and reminders; it uses json-server to persist those tasks. 
+This task tracker software was built in an effort to better my React skills. This program lets you create a list of tasks and reminders; it uses json-server on the backend to persist those tasks. 
 
-<img src="readme-assets/EarlyMeetingsForever.gif" size="10">
+<img src="readme-assets/EarlyMeetingsForever.gif" width="40%">
 
 ## How To Install
-
-Before using this code you'll need to have node installed and if you use linux you should sudo apt install nodejs.
 
 To use this code copy and paste the commands below:
 
