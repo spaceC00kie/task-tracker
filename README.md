@@ -6,7 +6,7 @@ This task tracker software was built in an effort to better my React skills. The
 
 <img src="readme-assets/EarlyMeetingsForever.gif" width="40%">
 
-## How To Install
+## To Install
 
 To use this code, copy and paste these commands below:
 
