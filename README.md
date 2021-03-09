@@ -18,7 +18,7 @@ To use this code, copy and paste the commands below:
 
   `npm run server`
   
-  Open another window in the same directory and run:
+  Then open another window in the same directory and run:
 
   `npm start`
 
