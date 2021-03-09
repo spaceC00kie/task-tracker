@@ -8,7 +8,7 @@ This task tracker software was built in an effort to better my React skills. The
 
 ## How To Install
 
-To use this code, copy and paste the commands below:
+To use this code, copy and paste these commands below:
 
   `git clone https://github.com/spaceC00kie/reactToDoList`
 
