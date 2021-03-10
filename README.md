@@ -1,4 +1,4 @@
-# Task Tracker
+# Task Tracker App
 
 ## About
 
