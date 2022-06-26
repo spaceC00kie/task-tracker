@@ -2,7 +2,7 @@
 
 ## About
 
-This task tracker software was built in an effort to better my React skills. The service lets the user create a list of tasks and reminders that persists using a Redis database. It runs on a raspberry pi on my home network 
+This task tracker software lets users make a to-do list and set reminders for it in a Redis database. I run it off a raspberry pi on my home network. 
 
 <img src="readme-assets/EarlyMeetingsForever.gif" width="40%">
 
