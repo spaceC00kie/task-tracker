@@ -2,13 +2,13 @@
 
 ## About
 
-This task tracker software was built in an effort to better my React skills. The service lets you create a list of tasks and reminders; it uses json-server on the backend to persist those tasks. 
+This task tracker software was built in an effort to better my React skills. The service lets the user create a list of tasks and reminders that persists using a Redis database. It runs on a raspberry pi on my home network 
 
 <img src="readme-assets/EarlyMeetingsForever.gif" width="40%">
 
 ## To Install
 
-To use this code, copy and paste these commands below:
+Copy and paste these commands:
 
   `git clone https://github.com/spaceC00kie/reactToDoList`
 
