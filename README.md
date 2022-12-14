@@ -2,39 +2,45 @@
 
 ## About
 
-This task tracker software lets users make a to-do list and set reminders for it in a Redis database. I run it off a raspberry pi on my home network. 
+Task Tracker is a to-do list and reminder software that allows users to manage their tasks and set reminders for them. The tasks are stored in a Redis database, and the app can be run on a Raspberry Pi or other device on a home network.
 
 <img src="readme-assets/EarlyMeetingsForever.gif" width="40%">
 
-## To Install
+## Installation
 
-Copy and paste these commands:
+To install Task Tracker, follow these steps:
 
-  `git clone https://github.com/spaceC00kie/reactToDoList`
+1. Clone the repository:
 
-  `cd reactToDoList`
+ ```
+ git clone https://github.com/spaceC00kie/reactToDoList
+ ```
 
-  `npm i`
+2. Navigate to the repository directory:
 
-  `npm run server`
+ ```
+ cd reactToDoList
+ ```
+ 
+ 3. Install the dependencies:
+
+ ```
+ npm i
+ ```
+ 
+ 4. Run the server:
+
+ ```
+ npm run server
+ ```
   
-  Then open another window in the same directory and run:
+5. In another terminal window in the same directory, start the app:
 
-  `npm start`
+ ```
+ npm start
+ ```
 
+## Credits
 
+Task Tracker was created using a [tutorial](https://youtu.be/w7ejDZ8SWv8) from Traversy Media and guidance from [Geek Technique](https://github.com/geektechniquestudios). Thank you to both for their help in creating this app.
 
-
-<sub><sup> Thank you for checking out my app :) </sup></sub>
-
-
-
-<details>
-   <summary>
-     Credits
-  </summary>
-  
-###### Thanks to Traversy Media for the [tutorial](https://youtu.be/w7ejDZ8SWv8) that helped me create this app.
-
-###### Thank you to [Geek Technique](https://github.com/geektechniquestudios) for guidance as well!
-</details>
